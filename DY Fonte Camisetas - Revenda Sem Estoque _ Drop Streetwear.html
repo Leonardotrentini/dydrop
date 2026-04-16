@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)file:///C:/Users/Leonardo%20trentini/Downloads/dy-landing-page-FINAL_2.html -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#0A0A0A">
+    <meta name="description" content="Revenda camisetas streetwear sem estoque por R$97/mês. Acesso a milhares de produtos, despacho no mesmo dia, lucro de 100%+.">
+    <title>DY Fonte Camisetas - Revenda Sem Estoque | Drop Streetwear</title>
+    
+    <!-- Preconnect críticos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link rel="preconnect" href="https://www.youtube.com/">
+    <link rel="dns-prefetch" href="https://i.ytimg.com/">
+    
+    <!-- Fontes otimizadas -->
+    <link href="./DY Fonte Camisetas - Revenda Sem Estoque _ Drop Streetwear_files/css2" rel="stylesheet">
+    
+    <style>
+        :root {
+            --gold: #D4AF37;
+            --gold-light: #F4E5A1;
+            --gold-dark: #B8941F;
+            --black: #0A0A0A;
+            --black-light: #1A1A1A;
+            --gray: #2A2A2A;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--black);
+            color: #fff;
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 80px 0 60px;
+            background: linear-gradient(135deg, var(--black) 0%, var(--black-light) 100%);
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.08) 0%, transparent 70%);
+            top: -300px;
+            right: -300px;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.75rem, 7vw, 4rem);
+            font-weight: 900;
+            line-height: 1.15;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 50%, var(--gold-dark) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero h2 {
+            font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+            font-weight: 600;
+            margin-bottom: 32px;
+            color: #fff;
+            line-height: 1.4;
+        }
+
+        .hero-subheadline {
+            font-size: clamp(0.95rem, 2vw, 1.15rem);
+            font-weight: 400;
+            color: var(--gold-light);
+            margin-bottom: 36px;
+            line-height: 1.5;
+        }
+
+        /* CTA Button */
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+            color: var(--black);
+            padding: 18px 40px;
+            font-size: 1.05rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: 0 8px 30px rgba(212, 175, 55, 0.3);
+            transition: all 0.3s ease;
+            touch-action: manipulation;
+        }
+
+        .cta-button:active {
+            transform: scale(0.98);
+        }
+
+        /* Section */
+        section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.75rem, 5vw, 3rem);
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: 48px;
+            color: var(--gold);
+        }
+
+        /* Problem Section */
+        .problem-section {
+            background: var(--black-light);
+        }
+
+        .problem-item {
+            background: #1a1a1a;
+            border-left: 3px solid #ff4444;
+            padding: 20px 24px;
+            border-radius: 8px;
+            display: flex;
+            gap: 16px;
+            margin-bottom: 12px;
+        }
+
+        .problem-item span {
+            color: #ff4444;
+            font-size: 1.25rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .problem-item strong {
+            color: #fff;
+            font-size: 1.05rem;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .problem-item p {
+            color: rgba(255,255,255,0.7);
+            font-size: 0.95rem;
+            margin: 0;
+        }
+
+        .problem-quote {
+            text-align: center;
+            padding: 28px 24px;
+            background: var(--gray);
+            border-radius: 12px;
+            border-left: 4px solid var(--gold);
+            margin-top: 40px;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--gold-light);
+            font-style: italic;
+            line-height: 1.5;
+        }
+
+        /* Benefits Grid */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .benefit-card {
+            background: #1a1a1a;
+            border: 1px solid rgba(212, 175, 55, 0.25);
+            border-radius: 12px;
+            padding: 32px 24px;
+        }
+
+        .benefit-card-icon {
+            font-size: 2.25rem;
+            margin-bottom: 16px;
+        }
+
+        .benefit-card h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+
+        .benefit-item {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 14px;
+        }
+
+        .benefit-item span {
+            color: #44ff44;
+            font-size: 1.15rem;
+            flex-shrink: 0;
+        }
+
+        .benefit-item strong {
+            color: #fff;
+            font-weight: 600;
+            display: block;
+            font-size: 0.95rem;
+        }
+
+        .benefit-item small {
+            color: rgba(255,255,255,0.65);
+            display: block;
+            font-size: 0.85rem;
+            margin-top: 2px;
+        }
+
+        /* Steps */
+        .step {
+            display: grid;
+            grid-template-columns: 80px 1fr;
+            gap: 24px;
+            padding: 32px 24px;
+            background: #1a1a1a;
+            border-radius: 12px;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            margin-bottom: 20px;
+        }
+
+        .step-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+            line-height: 1;
+        }
+
+        .step h3 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--gold-light);
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+
+        .step p {
+            color: rgba(255,255,255,0.8);
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.25), transparent);
+            margin: 0 auto 20px;
+            width: 70%;
+        }
+
+        .final-message {
+            text-align: center;
+            padding: 32px 24px;
+            background: linear-gradient(135deg, #1a1a1a 0%, var(--gray) 100%);
+            border-radius: 12px;
+            border: 2px solid var(--gold);
+            margin-top: 40px;
+            box-shadow: 0 8px 30px rgba(212, 175, 55, 0.15);
+        }
+
+        .final-message p {
+            font-size: 1.25rem;
+            font-weight: 600;
+            line-height: 1.5;
+        }
+
+        .final-message strong {
+            color: var(--gold);
+        }
+
+        /* Why Grid */
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 24px;
+        }
+
+        .why-item {
+            text-align: center;
+            padding: 32px 20px;
+            background: #1a1a1a;
+            border-radius: 12px;
+        }
+
+        .why-icon {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+        }
+
+        .why-item h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--gold);
+            margin-bottom: 12px;
+        }
+
+        .why-item p {
+            color: rgba(255,255,255,0.75);
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        /* Pricing */
+        .pricing-card {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 48px 32px;
+            background: linear-gradient(135deg, var(--black-light) 0%, var(--gray) 100%);
+            border-radius: 16px;
+            border: 2px solid var(--gold);
+            box-shadow: 0 15px 50px rgba(212, 175, 55, 0.25);
+            text-align: center;
+        }
+
+        .price {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 900;
+            color: var(--gold);
+            margin: 20px 0;
+        }
+
+        .price-period {
+            font-size: 1.35rem;
+            color: var(--gold-light);
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin: 32px 0;
+            text-align: left;
+        }
+
+        .pricing-features li {
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            font-size: 1.05rem;
+            display: flex;
+            gap: 10px;
+        }
+
+        .pricing-features span {
+            color: #44ff44;
+            flex-shrink: 0;
+        }
+
+        /* FAQ */
+        .faq-item {
+            margin-bottom: 16px;
+            background: var(--gray);
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid rgba(212, 175, 55, 0.15);
+        }
+
+        .faq-question {
+            padding: 20px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--gold-light);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .faq-answer {
+            padding: 0 20px 20px;
+            color: rgba(255, 255, 255, 0.75);
+            line-height: 1.7;
+        }
+
+        /* Mobile Optimizations */
+        @media (max-width: 768px) {
+            section {
+                padding: 60px 0;
+            }
+
+            .hero {
+                min-height: auto;
+                padding: 60px 0 40px;
+            }
+
+            .step {
+                grid-template-columns: 60px 1fr;
+                gap: 16px;
+                padding: 24px 16px;
+            }
+
+            .step-number {
+                font-size: 2.75rem;
+            }
+
+            .benefits-grid,
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .pricing-card {
+                padding: 36px 20px;
+            }
+
+            .price {
+                font-size: 2.75rem;
+            }
+
+            .cta-button {
+                width: 100%;
+                max-width: 400px;
+            }
+
+            .vsl-container {
+                border-radius: 8px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 16px;
+            }
+
+            .problem-item {
+                padding: 16px 18px;
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            .benefit-card {
+                padding: 24px 18px;
+            }
+        }
+
+        /* Performance: Reduce animations on low-end devices */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation: none !important;
+                transition: none !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Revenda Camisetas Sem Precisar de Estoque e Com Alta Margem de Lucro!</h1>
+                <h2>Use Já o Meu Estoque com Milhares de Peças e Variedade Facilitando Suas Vendas e Acelerando Seu Resultado Sem Riscos de Dinheiro Travado ou Perder Vendas Por Estoque!</h2>
+                
+                <p class="hero-subheadline">
+                    Acesso ao catálogo completo por R$97/mês • Compra só quando vender • Despacho no mesmo dia • Lucre 100%+ por peça
+                </p>
+                <a href="https://pay.kiwify.com.br/C6JV9t8" target="_blank" rel="noopener" class="cta-button">QUERO ACESSO POR R$97/MÊS ⚡</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problems -->
+    <section class="problem-section">
+        <div class="container">
+            <h2 class="section-title">Tá Perdendo Dinheiro Por Causa Desses Problemas?</h2>
+            
+            <div style="max-width: 900px; margin: 0 auto;">
+                <div class="problem-item">
+                    <span>✕</span>
+                    <div>
+                        <strong>Dinheiro travado em estoque parado</strong>
+                        <p>comprou pensando que venderia, mas ficou encalhado</p>
+                    </div>
+                </div>
+
+                <div class="problem-item">
+                    <span>✕</span>
+                    <div>
+                        <strong>Perde venda porque não tem a peça</strong>
+                        <p>cliente quer, você não tem, e a venda vai pro concorrente</p>
+                    </div>
+                </div>
+
+                <div class="problem-item">
+                    <span>✕</span>
+                    <div>
+                        <strong>Fornecedor exige pedido mínimo alto</strong>
+                        <p>tem que investir R$1.000+ pra começar e torcer pra vender</p>
+                    </div>
+                </div>
+
+                <div class="problem-item">
+                    <span>✕</span>
+                    <div>
+                        <strong>Catálogo pequeno = vendas limitadas</strong>
+                        <p>poucos produtos, pouca variedade, pouco lucro</p>
+                    </div>
+                </div>
+
+                <div class="problem-item">
+                    <span>✕</span>
+                    <div>
+                        <strong>Burocracia pra abrir empresa</strong>
+                        <p>CNPJ, contador, taxas... É caro e complicado demais</p>
+                    </div>
+                </div>
+
+                <div class="problem-quote">
+                    "E se você pudesse revender usando MEU estoque, sem arriscar nem R$1 em produto parado?"
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section style="background: var(--black); padding: 80px 0;">
+        <div class="container">
+            <h2 class="section-title">Como Funciona o Sistema de Drop</h2>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-card-icon">🔥</div>
+                    <h3>Acesso Total ao Catálogo</h3>
+                    <div class="benefit-item">
+                        <span>✓</span>
+                        <div>
+                            <strong>Milhares de camisetas streetwear</strong>
+                            <small>variedade infinita</small>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <span>✓</span>
+                        <div>
+                            <strong>Novidades todos os dias</strong>
+                            <small>sempre tem produto novo pra oferecer</small>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <span>✓</span>
+                        <div>
+                            <strong>Atualizado 24h</strong>
+                            <small>preços, estoque e fotos em tempo real</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-card-icon">💎</div>
+                    <h3>Sem Investimento Alto</h3>
+                    <div class="benefit-item">
+                        <span>✓</span>
+                        <div>
+                            <strong>Só R$97/mês</strong>
+                            <small>sem precisar abrir empresa</small>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <span>✓</span>
+                        <div>
+                            <strong>Sem estoque parado</strong>
+                            <small>compra só quando vender</small>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <span>✓</span>
+                        <div>
+                            <strong>Sem pedido mínimo</strong>
+                            <small>vende 1 peça ou 100, você decide</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-card-icon">🎯</div>
+                    <h3>Você Só Vende, A Gente Faz o Resto</h3>
+                    <div class="benefit-item">
+                        <span>✓</span>
+                        <div>
+                            <strong>Despacho no mesmo dia</strong>
+                            <small>seu cliente recebe rápido</small>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <span>✓</span>
+                        <div>
+                            <strong>Compra por videochamada</strong>
+                            <small>transparência total antes de pedir</small>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <span>✓</span>
+                        <div>
+                            <strong>Suporte 24h</strong>
+                            <small>tira dúvida na hora que precisar</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-card-icon">💰</div>
+                    <h3>Lucro Real, Direto da Fábrica</h3>
+                    <div class="benefit-item">
+                        <span>✓</span>
+                        <div>
+                            <strong>Preço de fábrica</strong>
+                            <small>sem atravessador comendo sua margem</small>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <span>✓</span>
+                        <div>
+                            <strong>100%+ de lucro por peça</strong>
+                            <small>dobra seu dinheiro em cada venda</small>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <span>✓</span>
+                        <div>
+                            <strong>Revenda onde quiser</strong>
+                            <small>Instagram, WhatsApp, TikTok, Shopee...</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section style="background: var(--black-light); padding: 80px 0;">
+        <div class="container">
+            <h2 class="section-title">Como Funciona Na Prática</h2>
+            
+            <div style="max-width: 1000px; margin: 0 auto;">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div>
+                        <h3>Assina por R$97/mês</h3>
+                        <p>Garante acesso completo ao catálogo com milhares de camisetas streetwear</p>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div>
+                        <h3>Divulga nas suas redes</h3>
+                        <p>Pega fotos e preços do catálogo e posta no Instagram, WhatsApp, TikTok, onde quiser</p>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div>
+                        <h3>Vendeu? Faz o pedido</h3>
+                        <p>Compra só o que já vendeu (peça por peça, sem mínimo). A gente despacha no mesmo dia</p>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div>
+                        <h3>Embolsa o lucro</h3>
+                        <p>Vendeu por R$100? Pagou R$40 pra gente? Lucrou R$60 limpos. E repete o ciclo</p>
+                    </div>
+                </div>
+
+                <div class="final-message">
+                    <p>Você não precisa de loja, estoque ou CNPJ.<br><strong>Só precisa de celular e vontade de vender.</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Different -->
+    <section style="background: var(--black); padding: 80px 0;">
+        <div class="container">
+            <h2 class="section-title">Por Que o Sistema de Drop é o Melhor Modelo</h2>
+            <div class="why-grid">
+                <div class="why-item">
+                    <div class="why-icon">📦</div>
+                    <h3>Variedade Infinita</h3>
+                    <p>Acesso a milhares de produtos sempre atualizados. Você nunca fica sem opção.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">💸</div>
+                    <h3>Risco Zero</h3>
+                    <p>Não precisa comprar antes de vender. Seu dinheiro não fica travado.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">🏭</div>
+                    <h3>Direto da Fábrica</h3>
+                    <p>Sem atravessador. Preço de fábrica = margem gigante pra você.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">⚡</div>
+                    <h3>Velocidade</h3>
+                    <p>Vendeu de manhã? Pedido sai no mesmo dia. Cliente satisfeito compra de novo.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">🎯</div>
+                    <h3>Sem Burocracia</h3>
+                    <p>Não precisa de CNPJ, loja física ou contador. Revende pelo celular.</p>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">💬</div>
+                    <h3>Suporte Dedicado</h3>
+                    <p>WhatsApp direto 24h. Dúvida? Resolve na hora, não perde venda.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" style="background: var(--black-light); padding: 80px 0;">
+        <div class="container">
+            <h2 class="section-title">Quanto Custa Ter Acesso</h2>
+            <div class="pricing-card">
+                <div class="price">R$97<span class="price-period">/mês</span></div>
+                <h3 style="font-size: 1.35rem; color: var(--gold-light); margin-bottom: 8px;">Acesso Total ao Sistema</h3>
+                <p style="font-size: 0.9rem; color: rgba(255,255,255,0.6); margin-bottom: 28px;">Venda 2 camisetas e você já pagou o mês</p>
+                
+                <ul class="pricing-features">
+                    <li><span>✔</span> Acesso ilimitado a MILHARES de camisetas</li>
+                    <li><span>✔</span> Use nosso estoque como se fosse seu</li>
+                    <li><span>✔</span> Catálogo atualizado 24h</li>
+                    <li><span>✔</span> Compra só DEPOIS de vender (zero risco)</li>
+                    <li><span>✔</span> Sem pedido mínimo - 1 peça ou 1000</li>
+                    <li><span>✔</span> Despacho no mesmo dia</li>
+                    <li><span>✔</span> Preço de fábrica (100%+ de margem)</li>
+                    <li><span>✔</span> Videochamada ao vivo no estoque</li>
+                    <li><span>✔</span> Suporte 24h via WhatsApp</li>
+                    <li><span>✔</span> Cancela quando quiser (sem multa)</li>
+                    <li><span>✔</span> Garantia incondicional de 7 dias</li>
+                </ul>
+
+                <a href="https://pay.kiwify.com.br/C6JV9t8" target="_blank" rel="noopener" class="cta-button" style="margin-top: 24px;">GARANTIR MEU ACESSO AGORA 🚀</a>
+                
+                <p style="margin-top: 20px; font-size: 0.85rem; color: rgba(255,255,255,0.5);">
+                    Cancele quando quiser • Sem fidelidade • Sem pegadinha
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section style="background: var(--black); padding: 80px 0;">
+        <div class="container">
+            <h2 class="section-title">Perguntas Frequentes</h2>
+            <div style="max-width: 900px; margin: 0 auto;">
+                <div class="faq-item">
+                    <div class="faq-question">Preciso ter empresa ou CNPJ? <span>❓</span></div>
+                    <div class="faq-answer">NÃO. Você assina como pessoa física. Não precisa de loja, CNPJ, contador, nada disso.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Quanto custa a assinatura? <span>❓</span></div>
+                    <div class="faq-answer">R$97 por mês. Cancela quando quiser, sem multa nem burocracia.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Preciso comprar estoque antes? <span>❓</span></div>
+                    <div class="faq-answer">NÃO. Você só compra DEPOIS que vender. Vendeu 1 peça? Compra 1. Zero risco de estoque parado.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Tem pedido mínimo? <span>❓</span></div>
+                    <div class="faq-answer">Não. Você compra peça por peça. Vende 1 camiseta e quer pedir só ela? Pode.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Como eu divulgo os produtos? <span>❓</span></div>
+                    <div class="faq-answer">Pega as fotos e preços do catálogo e posta nas suas redes: Instagram, WhatsApp, TikTok, onde quiser.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Quanto tempo demora pra despachar? <span>❓</span></div>
+                    <div class="faq-answer">Mesmo dia. Fez o pedido pela manhã, sai ainda hoje. Seu cliente recebe rápido.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer CTA -->
+    <section style="background: linear-gradient(135deg, var(--black) 0%, var(--black-light) 100%); text-align: center; padding: 80px 0;">
+        <div class="container">
+            <h2 style="font-family: &#39;Playfair Display&#39;, serif; font-size: clamp(1.75rem, 5vw, 2.75rem); color: var(--gold); margin-bottom: 36px;">Começa a Revender Hoje Sem Precisar Investir Alto</h2>
+            <a href="https://pay.kiwify.com.br/C6JV9t8" target="_blank" rel="noopener" class="cta-button">QUERO ACESSAR POR R$97/MÊS 💰</a>
+        </div>
+    </section>
+
+    <!-- Minimal JavaScript for smooth scroll -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+
+
+</body></html>
