@@ -3,9 +3,19 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="theme-color" content="#080808" />
 <meta name="description" content="Revenda camisetas streetwear sem estoque por R$97/mês. Acesso a milhares de produtos, despacho no mesmo dia, lucro de 100%+." />
 <title>DY Fonte Camisetas - Revenda Sem Estoque | Drop Streetwear</title>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="dns-prefetch" href="https://i.ytimg.com" />
+<link rel="dns-prefetch" href="https://connect.facebook.net" />
+
+<link rel="preload" as="font" type="font/woff2" crossorigin href="https://fonts.gstatic.com/s/bebasneue/v16/JTUSjIg69CK48gW7PXoo9Wlhyw.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="https://fonts.gstatic.com/s/barlowcondensed/v13/HTx3L3I-JCGChYJ8VI-L6OO_au7B6xHT2g.woff2" />
+<link rel="preload" as="image" href="https://i.ytimg.com/vi/gLhl2SXhEyE/hqdefault.jpg" fetchpriority="high" />
+<link rel="preload" href="../assets/dropv2-fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<noscript><link rel="stylesheet" href="../assets/dropv2-fonts.css" /></noscript>
 <style>
   :root {
     --black: #080808;
@@ -27,10 +37,11 @@
   body {
     background: var(--black);
     color: var(--white);
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Barlow Condensed', 'Segoe UI', sans-serif;
     font-size: 18px;
     line-height: 1.5;
     overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
   }
 
   /* ─── NOISE OVERLAY ─── */
@@ -289,6 +300,8 @@
     padding: 90px 60px;
     border-top: 1px solid var(--border);
     position: relative;
+    content-visibility: auto;
+    contain-intrinsic-size: auto 600px;
   }
   .section-header {
     display: flex;
@@ -750,17 +763,16 @@
     letter-spacing: 0.1em;
   }
 
-  /* ─── ENTRY ANIMATION ─── */
+  /* ─── ENTRY ANIMATION (below fold only — hero visible immediately for LCP) ─── */
   @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(30px); }
+    from { opacity: 0; transform: translateY(20px); }
     to   { opacity: 1; transform: translateY(0); }
   }
-  .hero-eyebrow { animation: fadeUp 0.6s ease both; }
-  .hero-headline { animation: fadeUp 0.6s ease 0.1s both; }
-  .hero-h2 { animation: fadeUp 0.6s ease 0.2s both; }
-  .vsl-wrap { animation: fadeUp 0.6s ease 0.3s both; }
-  .hero-subline { animation: fadeUp 0.6s ease 0.4s both; }
-  .cta-primary { animation: fadeUp 0.6s ease 0.5s both; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ticker-inner { animation: none; }
+    * { animation: none !important; transition: none !important; }
+  }
 
   /* ─── MOBILE ─── */
   @media (max-width: 900px) {
@@ -812,24 +824,6 @@
     }
   }
 </style>
-
-    <!-- Meta Pixel Code -->
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1690203658961429');
-    fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1690203658961429&ev=PageView&noscript=1"
-    alt="" /></noscript>
-    <!-- End Meta Pixel Code -->
 </head>
 <body>
 
@@ -868,7 +862,7 @@
   <!-- VSL -->
   <div class="vsl-wrap" id="vsl-wrap">
     <div class="vsl-inner" id="vsl-inner">
-      <img class="vsl-poster" src="https://i.ytimg.com/vi/gLhl2SXhEyE/hqdefault.jpg" alt="Vídeo de apresentação DY Fonte Camisetas" />
+      <img class="vsl-poster" src="https://i.ytimg.com/vi/gLhl2SXhEyE/hqdefault.jpg" alt="Vídeo de apresentação DY Fonte Camisetas" width="480" height="360" fetchpriority="high" decoding="async" />
       <div class="vsl-play-btn" id="vsl-play">
         <div class="vsl-play-icon"></div>
       </div>
@@ -891,22 +885,6 @@
   <a href="https://pay.kiwify.com.br/C6JV9t8" target="_blank" rel="noopener" class="cta-primary">QUERO ACESSO POR R$97/MÊS ⚡</a>
   <div class="cta-footnote">Cancele quando quiser &nbsp;·&nbsp; Sem fidelidade &nbsp;·&nbsp; Sem pegadinha</div>
 </section>
-
-<script>
-  (function(){
-    var play = document.getElementById('vsl-play');
-    var inner = document.getElementById('vsl-inner');
-    var iframeWrap = document.getElementById('vsl-iframe-wrap');
-    var iframe = document.getElementById('vsl-iframe');
-    if(play) {
-      play.addEventListener('click', function(){
-        inner.style.display = 'none';
-        iframeWrap.style.display = 'block';
-        iframe.src = 'https://www.youtube.com/embed/gLhl2SXhEyE?si=0j6gHHaecrGAIjn-&autoplay=1&rel=0&modestbranding=1';
-      });
-    }
-  })();
-</script>
 
 <!-- PROBLEMS -->
 <section class="section">
@@ -1150,6 +1128,40 @@
   <div class="logo">DY Fonte Camisetas</div>
   <div class="copy">© 2025 DY Fonte Camisetas — Todos os direitos reservados</div>
 </footer>
+
+<script>
+  (function () {
+    var play = document.getElementById('vsl-play');
+    var inner = document.getElementById('vsl-inner');
+    var iframeWrap = document.getElementById('vsl-iframe-wrap');
+    var iframe = document.getElementById('vsl-iframe');
+    if (!play) return;
+    play.addEventListener('click', function () {
+      inner.style.display = 'none';
+      iframeWrap.style.display = 'block';
+      iframe.src = 'https://www.youtube.com/embed/gLhl2SXhEyE?si=0j6gHHaecrGAIjn-&autoplay=1&rel=0&modestbranding=1';
+    });
+  })();
+</script>
+
+<!-- Meta Pixel (deferred — não bloqueia render) -->
+<script>
+  window.addEventListener('load', function () {
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1690203658961429');
+    fbq('track', 'PageView');
+  });
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1690203658961429&ev=PageView&noscript=1"
+alt="" /></noscript>
 
 </body>
 </html>
