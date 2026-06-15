@@ -164,6 +164,29 @@ body::before {
   z-index: 9999;
 }
 
+.section-atacado {
+  text-align: center;
+}
+
+.atacado-figure {
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.atacado-figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+@media (max-width: 900px) {
+  .atacado-figure {
+    max-width: 100%;
+  }
+}
+
 .section {
   padding: 90px 60px;
   border-top: 1px solid var(--border);
