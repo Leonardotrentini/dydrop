@@ -131,17 +131,6 @@ footer .copy {
   pointer-events: none;
   z-index: 1;
 }
-.vsl-poster { transition: opacity 0.3s; }
-.vsl-play-btn { transition: background 0.2s; }
-.vsl-inner:hover .vsl-play-btn { background: rgba(0,0,0,0.2); }
-.vsl-play-icon {
-  transition: transform 0.2s, box-shadow 0.2s;
-  box-shadow: 0 0 0 0 rgba(201,162,39,0.4);
-}
-.vsl-inner:hover .vsl-play-icon {
-  transform: scale(1.08);
-  box-shadow: 0 0 0 10px rgba(201,162,39,0.15);
-}
 .cta-primary {
   transition: transform 0.15s, box-shadow 0.15s;
 }
